@@ -63,14 +63,8 @@ public class App {
     private void elimiarDatosEnTablas() {
         try {
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM proyectos");
-            if (rs.next()) {
-                st.executeUpdate("DELETE FROM proyectos");
-            }
-            rs = st.executeQuery("SELECT * FROM clientes");
-            if (rs.next()) {
-                st.executeUpdate("DELETE FROM clientes");
-            }
+            st.execute("DELETE FROM proyectos");
+            st.execute("DELETE FROM clientes");
         } catch (SQLException e) {
             e.printStackTrace();
         }
