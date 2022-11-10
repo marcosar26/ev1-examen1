@@ -1,0 +1,116 @@
+[
+  {
+    "codigo": 1,
+    "nombre": "Capgemini",
+    "nif": "71827343P",
+    "direccion": "Caveda 11",
+    "ciudad": "Oviedo",
+    "telefono": "678765635",
+    "proyectos": [
+      {
+        "precio": 720000.0,
+        "codigo_proyec": 1,
+        "nombre_proyec": "GESCOM",
+        "codigo_cliente": 1
+      }
+    ]
+  },
+  {
+    "codigo": 3,
+    "nombre": "B2B CE",
+    "nif": "09948632C",
+    "direccion": "Uría 11",
+    "ciudad": "Barcelona",
+    "telefono": "912837483",
+    "proyectos": [
+      {
+        "precio": 1.0E7,
+        "codigo_proyec": 2,
+        "nombre_proyec": "PESCI",
+        "codigo_cliente": 3
+      },
+      {
+        "precio": 5000000.0,
+        "codigo_proyec": 8,
+        "nombre_proyec": "VEGETA",
+        "codigo_cliente": 3
+      }
+    ]
+  },
+  {
+    "codigo": 4,
+    "nombre": "IECISA",
+    "nif": "09435656M",
+    "direccion": "Av. Carlos III 10",
+    "ciudad": "Pamplona",
+    "telefono": "948369587",
+    "proyectos": [
+      {
+        "precio": 5000000.0,
+        "codigo_proyec": 3,
+        "nombre_proyec": "SALSA",
+        "codigo_cliente": 4
+      }
+    ]
+  },
+  {
+    "codigo": 5,
+    "nombre": "CME",
+    "nif": "09435631D",
+    "direccion": "Uría 11",
+    "ciudad": "Barcelona",
+    "telefono": "935162345",
+    "proyectos": [
+      {
+        "precio": 3.0E7,
+        "codigo_proyec": 4,
+        "nombre_proyec": "TINEL",
+        "codigo_cliente": 5
+      }
+    ]
+  },
+  {
+    "codigo": 9,
+    "nombre": "FRANCISCO JAVIER PALACIO",
+    "nif": "09439836C",
+    "direccion": "Gran Vía 32",
+    "ciudad": "Madrid",
+    "telefono": "916287945",
+    "proyectos": [
+      {
+        "precio": 1000000.0,
+        "codigo_proyec": 5,
+        "nombre_proyec": "GESCOM II",
+        "codigo_cliente": 9
+      }
+    ]
+  },
+  {
+    "codigo": 12,
+    "nombre": "TU NOMBRE SA",
+    "nif": "72985632P",
+    "direccion": "San Jorge 1",
+    "ciudad": "Pamplona",
+    "telefono": "948265348",
+    "proyectos": [
+      {
+        "precio": 3600000.0,
+        "codigo_proyec": 6,
+        "nombre_proyec": "ITTECH",
+        "codigo_cliente": 12
+      },
+      {
+        "precio": 600000.0,
+        "codigo_proyec": 7,
+        "nombre_proyec": "PEGASUS",
+        "codigo_cliente": 12
+      },
+      {
+        "precio": 1.0E7,
+        "codigo_proyec": 9,
+        "nombre_proyec": "TOPSECRET",
+        "codigo_cliente": 12
+      }
+    ]
+  }
+]

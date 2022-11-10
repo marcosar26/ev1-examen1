@@ -1,0 +1,33 @@
+Leídos 12 clientes
+Se han insertado 12 clientes en la BD
+[Cliente {
+	codigo=4
+	nombre='IECISA'
+	nif='09435656M'
+	direccion='Av. Carlos III 10'
+	ciudad='Pamplona'
+	telefono='948369587'
+}
+, Cliente {
+	codigo=6
+	nombre='CARLOS ALONSO JR'
+	nif='38567893C'
+	direccion='Adela Bazo 5'
+	ciudad='Pamplona'
+	telefono='948369589'
+}
+, Cliente {
+	codigo=7
+	nombre='ALBERTO ANDUEZA'
+	nif='09435789C'
+	direccion='Agustín Flamarique 12'
+	ciudad='Pamplona'
+	telefono='948389652'
+}
+]
+Leídos 9 proyectos
+Leídos 9 proyectos
+Se han insertado 9 proyectos en la BD
+El precio medio de los proyectos de los clientes de BarcelONa es 15000000,00€
+Incrementado el precio de 1 proyectos
+Exportados 6 clientes

@@ -1,0 +1,56 @@
+[
+  {
+    "codigo_proyec": 1,
+    "nombre_proyec": "GESCOM",
+    "precio": 600000,
+    "codigo_cliente": 1
+  },
+  {
+    "codigo_proyec": 2,
+    "nombre_proyec": "PESCI",
+    "precio": 10000000,
+    "codigo_cliente": 3
+  },
+  {
+    "codigo_proyec": 3,
+    "nombre_proyec": "SALSA",
+    "precio": 5000000,
+    "codigo_cliente": 4
+  },
+  {
+    "codigo_proyec": 4,
+    "nombre_proyec": "TINEL",
+    "precio": 30000000,
+    "codigo_cliente": 5
+  },
+  {
+    "codigo_proyec": 5,
+    "nombre_proyec": "GESCOM II",
+    "precio": 1000000,
+    "codigo_cliente": 9
+  },
+  {
+    "codigo_proyec": 6,
+    "nombre_proyec": "ITTECH",
+    "precio": 3600000,
+    "codigo_cliente": 12
+  },
+  {
+    "codigo_proyec": 7,
+    "nombre_proyec": "PEGASUS",
+    "precio": 600000,
+    "codigo_cliente": 12
+  },
+  {
+    "codigo_proyec": 8,
+    "nombre_proyec": "VEGETA",
+    "precio": 5000000,
+    "codigo_cliente": 3
+  },
+  {
+    "codigo_proyec": 9,
+    "nombre_proyec": "TOPSECRET",
+    "precio": 10000000,
+    "codigo_cliente": 12
+  }
+]
