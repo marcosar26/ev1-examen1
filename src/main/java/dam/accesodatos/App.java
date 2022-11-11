@@ -322,9 +322,8 @@ public class App {
      */
     private void exportarClientesConMasOMismosProyectosQueAJson(int numProyectos, String ruta) {
         List<Cliente> clientes = new ArrayList<>();
-        try (PreparedStatement ps = con.prepareStatement("SELECT * FROM clientes c LEFT JOIN proyectos p ON c.codigo_cli = p.codigo_cliente WHERE p.codigo_cliente IS NOT NULL OR ? = 0 GROUP BY c.codigo_cli HAVING COUNT(p.codigo_proyec) >= ?")) {
+        try (PreparedStatement ps = con.prepareStatement("SELECT * FROM clientes c LEFT JOIN proyectos p ON c.codigo_cli = p.codigo_cliente GROUP BY c.codigo_cli HAVING COUNT(p.codigo_proyec) >= ?")) {
             ps.setInt(1, numProyectos);
-            ps.setInt(2, numProyectos);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 int codigo = rs.getInt("codigo_cli");
