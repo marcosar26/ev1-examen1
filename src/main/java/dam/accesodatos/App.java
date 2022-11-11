@@ -269,7 +269,7 @@ public class App {
      */
     private double calcularPrecioMedioProyectos(String localidad) {
         double precioMedio = 0;
-        try (PreparedStatement ps = con.prepareStatement("SELECT AVG(precio) AS precio_medio FROM proyectos p " + "INNER JOIN clientes c ON p.codigo_cliente = c.codigo_cli WHERE UPPER(ciudad) = UPPER(?)")) {
+        try (PreparedStatement ps = con.prepareStatement("SELECT AVG(precio) AS precio_medio FROM proyectos p INNER JOIN clientes c ON p.codigo_cliente = c.codigo_cli WHERE UPPER(ciudad) = UPPER(?)")) {
             ps.setString(1, localidad);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -295,7 +295,7 @@ public class App {
      */
     private int incrementarPrecioProyectos(String localidadCliente, double incremento) {
         int numProyectos = 0;
-        try (PreparedStatement ps = con.prepareStatement("UPDATE proyectos p " + "INNER JOIN clientes c ON p.codigo_cliente = c.codigo_cli " + "SET precio = precio + (precio * ?) WHERE UPPER(ciudad) = UPPER(?)")) {
+        try (PreparedStatement ps = con.prepareStatement("UPDATE proyectos p INNER JOIN clientes c ON p.codigo_cliente = c.codigo_cli SET precio = precio + (precio * ?) WHERE UPPER(ciudad) = UPPER(?)")) {
             ps.setDouble(1, incremento);
             ps.setString(2, localidadCliente);
             numProyectos = ps.executeUpdate();
@@ -322,7 +322,7 @@ public class App {
      */
     private void exportarClientesConMasOMismosProyectosQueAJson(int numProyectos, String ruta) {
         List<Cliente> clientes = new ArrayList<>();
-        try (PreparedStatement ps = con.prepareStatement("SELECT * FROM clientes c " + "LEFT JOIN proyectos p ON c.codigo_cli = p.codigo_cliente " + "WHERE p.codigo_cliente IS NOT NULL OR ? = 0 " + "GROUP BY c.codigo_cli " + "HAVING COUNT(p.codigo_proyec) >= ?")) {
+        try (PreparedStatement ps = con.prepareStatement("SELECT * FROM clientes c LEFT JOIN proyectos p ON c.codigo_cli = p.codigo_cliente WHERE p.codigo_cliente IS NOT NULL OR ? = 0 GROUP BY c.codigo_cli HAVING COUNT(p.codigo_proyec) >= ?")) {
             ps.setInt(1, numProyectos);
             ps.setInt(2, numProyectos);
             ResultSet rs = ps.executeQuery();
